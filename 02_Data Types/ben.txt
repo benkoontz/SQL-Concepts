@@ -1,0 +1,27 @@
+All values of a field (vertical entity) have the same data type
+
+For numeric fields
+Bigint(really by values)
+Int(big values)
+Smallint(-32,768 to 32,767)
+Tinyint(0 to 255)
+
+Used to store fractions
+Decimal(m,d) 57.64, m = 4, d = 2
+Numeric(Same as Decimal)
+Float(m,d) 
+For float data type, display length(m) and number of decimals(d) are optional
+
+Date and Time
+Datetime(yyyy-mm-dd hh:mm:ss)
+Date(yyyy-mm-dd)
+Time(hh:mm:ss)
+year(yyyy)
+
+Character data types
+Char(m) m  = 60, cant store values that have more than 60, you use memory for 60 characters
+Varchar(m) 
+Text(to store large amount of text)
+
+For Storing images
+Blob(binary large object) used to sore videos, images, etc...
