@@ -23,5 +23,20 @@ Char(m) m  = 60, cant store values that have more than 60, you use memory for 60
 Varchar(m) 
 Text(to store large amount of text)
 
+difference between Char and Varchar
+CHAR is used for Fixed Length Size Variable
+VARCHAR is used for Variable Length Size Variable.
+Example:
+Create table temp
+(Message CHAR(10),
+Store VARCHAR(10));
+
+Insert into temp
+values('Hello','Amazon');
+
+select length(Message), length(Store) from temp;
+length(Message)          Length(Store)
+10                    6
+
 For Storing images
 Blob(binary large object) used to sore videos, images, etc...
