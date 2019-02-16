@@ -96,4 +96,4 @@ from employee
 where age < all(select age from employee where salary > 20000);
 
 
-select age from employee where salary > 20000; # gets all ages above 20
+select age from employee where salary > 20000; # gets age of employees with salaries over 20000
