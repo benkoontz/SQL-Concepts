@@ -34,9 +34,6 @@ insert into emp_info(id,name,dob,email)
 select id, name, dob, email
 from employee;
 
-select * from emp_info;
-
-describe employee;
 select name, email # gets name and email fields
 from employee;
 
