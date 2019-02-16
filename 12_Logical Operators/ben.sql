@@ -88,9 +88,6 @@ from employee
 where age between 28 and 36; # finds people between age 28 and 36
 
 #all
-# this example is finding the person with the lowest age who also has a salary under 20000
-# so if the youngest person has a salary over 20000, it wont find that person 
-# so it wont find someone unless the person with the youngest age also has a salary under 20000
 select * 
 from employee
 where age < all(select age from employee where salary > 20000);
