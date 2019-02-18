@@ -1,0 +1,5 @@
+# SUBSTR(), RIGHT() & LEFT() Functions
+
+SELECT SUBSTR('I need tuna', 3, 4); # gets the word need, 3 is starting position and 4 is number of characters
+SELECT RIGHT('I need tuna', 4); # gets 4 characters starting from the right
+SELECT LEFT('I need tuna', 6); # gets 6 characters starting from the left
