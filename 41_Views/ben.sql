@@ -91,14 +91,37 @@ values(24, 112000, 191, 46, 34);
 insert into tutorial_info # second way to insert data
 values(25, 112000, 191, 46, 34);
 
-# Views in SQL are used if you want to view certain parts
-# of the table
-
-SELECT * FROM employee;
-
 CREATE VIEW emp_view AS 
 SELECT  id, name, email
 FROM employee
 WHERE name IS NOT NULL; # optional
 
-SELECT * FROM emp_view;
+# Views in SQL are used if you want to view certain parts
+# of the table
+# insert into views
+INSERT INTO emp_view
+VALUES(1917, 'Craig', 'craig007@gmail.com');
+
+INSERT INTO emp_view # inserts in employee table, but not view since the view is not null for name
+VALUES(1930, NULL, 'notavailable@gmail.com');
+
+SELECT * FROM employee;
+
+CREATE VIEW emp_view_new AS
+SELECT id, name, email
+FROM employee
+WHERE name IS NOT NULL
+WITH CHECK OPTION; # wont be inserted at all with this statement
+
+INSERT INTO emp_view_new # wont insert in any table now
+VALUES(1930, NULL, 'notavailable@gmail.com');
+
+UPDATE emp_view 
+SET name = 'BOND'
+WHERE id=1917; # updates the value in the emp_view table
+
+DELETE FROM emp_view
+WHERE id=1917;
+
+# remove a view from a table
+DROP VIEW emp_view;
