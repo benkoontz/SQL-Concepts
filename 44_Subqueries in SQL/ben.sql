@@ -169,7 +169,7 @@ WHERE salary = 227500;
 
 SELECT id, name FROM employee
 #WHERE salary = MAX(salary) # cant use this because MAX(salary) is an aggregate function
-WHERE salary = (SELECT MAX(salary) # FROM employee); # this is the sub query (SELECT MAX(salary) FROM employee);
+WHERE salary = (SELECT MAX(salary) FROM employee); # this is the sub query (SELECT MAX(salary) FROM employee);
 
 
 
