@@ -94,6 +94,10 @@ values(25, 112000, 191, 46, 34);
 
 
 
+# right join means that you take every row in the right table and add
+# it to the new table that you're creating. If theres no 
+# corresponding row in the first table (or left table), then the values for the
+# left table will just be null 
 
 # SQL Joins
 # joins allow you pull information from more than one table
