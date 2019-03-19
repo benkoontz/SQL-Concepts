@@ -87,7 +87,10 @@ values(15, 112000, 191, 46, 34);
 
 
 
-
+# left join means that you take every row in the left table and add
+# it to the new table that you're creating. If theres no 
+# corresponding row in the second table (or right table), then the values for the
+#right table will just be null 
 
 # SQL Joins
 # joins allow you pull information from more than one table
